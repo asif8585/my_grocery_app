@@ -8,7 +8,7 @@ class tab3 extends StatelessWidget {
     return Container(
       child: Center(
           child: Text(
-        "Tab 3",
+        "dairy",
         style: TextStyle(fontSize: 28),
       )),
     );
