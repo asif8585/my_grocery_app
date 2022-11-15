@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class tab2 extends StatelessWidget {
-  const tab2({Key? key}) : super(key: key);
+class vegitable_tab extends StatelessWidget {
+  const vegitable_tab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

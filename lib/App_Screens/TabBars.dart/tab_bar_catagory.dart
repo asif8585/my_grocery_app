@@ -52,9 +52,9 @@ class _Catagory_TabsState extends State<Catagory_Tabs>
               child: TabBarView(
                 controller: myTabController,
                 children: [
-                  tab1(),
-                  tab2(),
-                  tab3(),
+                  fruit_tab(),
+                  vegitable_tab(),
+                  dairy_tab(),
                 ],
               ),
             )

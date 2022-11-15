@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app_and_website/App_Screens/3_cart_ka_item_card.dart';
 
-class tab1 extends StatefulWidget {
-  const tab1({Key? key}) : super(key: key);
+class fruit_tab extends StatefulWidget {
+  const fruit_tab({Key? key}) : super(key: key);
 
   @override
-  State<tab1> createState() => _tab1State();
+  State<fruit_tab> createState() => _fruit_tabState();
 }
 
-class _tab1State extends State<tab1> {
+class _fruit_tabState extends State<fruit_tab> {
   String item_name_text = "Fruit basket";
 
   String item_price = "₹200";
