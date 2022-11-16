@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grocery_app_and_website/App_Screens/Home_Screen.dart';
-import 'package:grocery_app_and_website/App_Screens/Pages/cart_page.dart';
-import 'package:grocery_app_and_website/App_Screens/Pages/profile_page.dart';
+import 'package:grocery_app_and_website/Pages/cart_page.dart';
+import 'package:grocery_app_and_website/Pages/profile_page.dart';
 
 class Bottom_NavBar extends StatefulWidget {
   Bottom_NavBar({Key? key}) : super(key: key);

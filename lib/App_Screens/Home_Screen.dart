@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app_and_website/App_Screens/TabBars.dart/tab_bar_catagory.dart';
+import 'package:grocery_app_and_website/TabBars.dart/tab_bar_catagory.dart';
 import 'package:grocery_app_and_website/App_Screens/search_grocey.dart';
 
 class Home_screen extends StatelessWidget {
