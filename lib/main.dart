@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.green,
@@ -29,14 +30,5 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Bottom_NavBar();
-    // return Scaffold(
-    //   // bottomNavigationBar: Bottom_NavBar(),
-    //   appBar: AppBar(
-    //       title: Text(
-    //     "Grocery App",
-    //     style: GoogleFonts.aBeeZee(),
-    //   )),
-    //   body: Home_screen(),
-    // );
   }
 }

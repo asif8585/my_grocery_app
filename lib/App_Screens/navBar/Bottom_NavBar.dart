@@ -30,6 +30,9 @@ class _Bottom_NavBarState extends State<Bottom_NavBar> {
         child: _widgetOptions.elementAt(myIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.green,
+          selectedItemColor: Colors.black87,
+          unselectedItemColor: Colors.white,
           onTap: (index) {
             setState(() {
               myIndex = index;
@@ -44,7 +47,7 @@ class _Bottom_NavBarState extends State<Bottom_NavBar> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.shopping_cart), label: "Cart"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.category), label: "Categories"),
+                icon: Icon(Icons.account_circle), label: "Account"),
           ]),
     );
   }

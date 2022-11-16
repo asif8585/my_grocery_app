@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
+import 'package:grocery_app_and_website/Pages/product_detail_page.dart';
 
 class fruit_tab extends StatelessWidget {
   const fruit_tab({Key? key}) : super(key: key);
@@ -42,8 +44,13 @@ class fruit_tab extends StatelessWidget {
                 ],
               ),
               ElevatedButton(
-                  onPressed: () {},
-                  child: Icon(Icons.add_shopping_cart_outlined))
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Product_Details()));
+                  },
+                  child: Icon(Icons.shopping_bag_outlined))
             ],
           )),
 
