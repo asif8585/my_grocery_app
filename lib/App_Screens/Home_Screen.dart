@@ -18,14 +18,18 @@ class Home_screen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    "Welcome",
+                    "Hello,",
                     style: GoogleFonts.aBeeZee(
-                        fontSize: 12, fontWeight: FontWeight.w500),
+                        color: Color.fromARGB(255, 142, 135, 135),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600),
                   ),
                   Text(
                     "Sudhanshu Nandal",
                     style: GoogleFonts.aBeeZee(
-                        fontSize: 20, fontWeight: FontWeight.w700),
+                        color: Colors.green,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700),
                   ),
                 ],
               ),
