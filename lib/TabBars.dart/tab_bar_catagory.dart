@@ -44,7 +44,7 @@ class _Catagory_TabsState extends State<Catagory_Tabs>
                     style: TextStyle(fontSize: 16, color: Colors.black38),
                   ),
                   Text(
-                    "Veggies",
+                    "Veg",
                     style: TextStyle(fontSize: 16, color: Colors.black38),
                   ),
                   Text(

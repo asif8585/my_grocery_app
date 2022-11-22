@@ -13,7 +13,7 @@ class Bottom_NavBar extends StatefulWidget {
 
 class _Bottom_NavBarState extends State<Bottom_NavBar> {
   int myIndex = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
+  static List<Widget> _widgetOptions = <Widget>[
     SafeArea(child: Home_screen()),
     Cart_Page(),
     Profile_Page(),

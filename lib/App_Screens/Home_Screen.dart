@@ -25,7 +25,7 @@ class Home_screen extends StatelessWidget {
                         fontWeight: FontWeight.w600),
                   ),
                   Text(
-                    "Sudhanshu Nandal",
+                    "Asif Khan",
                     style: GoogleFonts.aBeeZee(
                         color: Colors.green,
                         fontSize: 20,

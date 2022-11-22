@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:get/get.dart';
 
 class Product_Details extends StatefulWidget {
   Product_Details({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class _Product_DetailsState extends State<Product_Details> {
                   padding: const EdgeInsets.all(8.0),
                   child: IconButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      Get.back();
                     },
                     icon: Icon(
                       Icons.arrow_back_ios_new_outlined,
@@ -37,7 +38,7 @@ class _Product_DetailsState extends State<Product_Details> {
                   padding: const EdgeInsets.all(10.0),
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.share_outlined, color: Colors.green),
+                    icon: Icon(Icons.favorite_outline, color: Colors.green),
                   ),
                 )
               ],
