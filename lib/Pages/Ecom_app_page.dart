@@ -34,6 +34,8 @@ class _Ecom_demo_PageState extends State<Ecom_demo_Page> {
               itemCount: _userModal!.length,
               itemBuilder: (context, index) {
                 return Card(
+                  surfaceTintColor: Colors.teal,
+                  elevation: 5,
                   child: Column(
                     children: [
                       Column(

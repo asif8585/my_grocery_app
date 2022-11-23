@@ -41,15 +41,23 @@ class fruit_tab extends StatelessWidget {
                 )
               ],
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Get.toNamed("/product_detail_page");
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => Product_Details()));
-                },
-                child: Icon(Icons.shopping_bag_outlined))
+            Column(
+              children: [
+                ElevatedButton(
+                    onPressed: () {
+                      Get.toNamed("/product_detail_page");
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => Product_Details()));
+                    },
+                    child: Icon(Icons.shopping_bag_outlined)),
+                Text(
+                  "Click here",
+                  style: GoogleFonts.abel(),
+                )
+              ],
+            )
           ],
         )),
 

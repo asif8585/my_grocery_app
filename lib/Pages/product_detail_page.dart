@@ -55,7 +55,9 @@ class _Product_DetailsState extends State<Product_Details> {
                   child: Text(
                     "Banana",
                     style: GoogleFonts.balooBhaijaan2(
-                        fontSize: 25, fontWeight: FontWeight.w600),
+                        color: Colors.black54,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w600),
                   ),
                 ),
                 Padding(
@@ -92,7 +94,7 @@ class _Product_DetailsState extends State<Product_Details> {
                   child: Text(
                     "₹ 60/Dz",
                     style: GoogleFonts.aBeeZee(
-                        fontSize: 30,
+                        fontSize: 25,
                         fontWeight: FontWeight.w600,
                         color: Colors.black54),
                   ),
@@ -103,11 +105,15 @@ class _Product_DetailsState extends State<Product_Details> {
                         ? ElevatedButton(
                             style: ButtonStyle(
                               shape: MaterialStatePropertyAll(
-                                  CircleBorder(side: BorderSide.none)),
-                              backgroundColor:
-                                  MaterialStatePropertyAll(Colors.green),
+                                CircleBorder(side: BorderSide.none),
+                              ),
+                              // backgroundColor:
+                              //     MaterialStatePropertyAll(Colors.green),
                             ),
-                            child: Icon(Icons.remove),
+                            child: Icon(
+                              Icons.remove,
+                              size: 23,
+                            ),
                             onPressed: () => setState(() => _itemCount--),
                           )
                         : new Container(),
@@ -137,7 +143,7 @@ class _Product_DetailsState extends State<Product_Details> {
                         ),
                         child: new Icon(
                           Icons.add,
-                          size: 28,
+                          size: 23,
                         ),
                         onPressed: () => setState(() => _itemCount++)),
                   ],
@@ -149,7 +155,8 @@ class _Product_DetailsState extends State<Product_Details> {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called ,plantains, distinguishing them from dessert bananas.",
-                  style: GoogleFonts.aBeeZee(fontSize: 16, color: Colors.grey),
+                  style:
+                      GoogleFonts.aBeeZee(fontSize: 16, color: Colors.black54),
                 ),
               ),
             ),
@@ -173,7 +180,9 @@ class _Product_DetailsState extends State<Product_Details> {
                       onPressed: () {},
                       child: Text(
                         "Checkout",
-                        style: TextStyle(fontSize: 18),
+                        style: GoogleFonts.aBeeZee(
+                          fontSize: 17,
+                        ),
                       )),
                 )
               ],
