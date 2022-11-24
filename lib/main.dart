@@ -5,7 +5,7 @@ import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
 import 'package:grocery_app_and_website/App_Screens/Home_Screen.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:grocery_app_and_website/App_Screens/navBar/Bottom_NavBar.dart';
+import 'package:grocery_app_and_website/navBar/Bottom_NavBar.dart';
 import 'package:grocery_app_and_website/Pages/product_detail_page.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 

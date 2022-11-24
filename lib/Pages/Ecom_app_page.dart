@@ -81,8 +81,10 @@ class _Ecom_demo_PageState extends State<Ecom_demo_Page> {
                         children: [
                           SizedBox(
                             child: Image.network(
-                                _userModal![index].image.toString()),
-                            height: 200,
+                              _userModal![index].image.toString(),
+                              width: 120,
+                            ),
+                            height: 180,
                           ),
                           Row(
                             children: [
