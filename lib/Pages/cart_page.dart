@@ -19,7 +19,7 @@ class _Cart_PageState extends State<Cart_Page> {
   }
 
   void _getCartData() async {
-    _myCartModal = (await fetch_cart().fetch_Cart_data());
+    _myCartModal = (await Cart_Api_Service().fetch_Cart_Data());
     Future.delayed(const Duration(milliseconds: 500))
         .then((value) => setState(() {}));
   }
@@ -35,8 +35,11 @@ class _Cart_PageState extends State<Cart_Page> {
                 itemCount: _myCartModal!.length,
                 itemBuilder: (context, index) {
                   return Card(
-                    child: Column(
-                        children: [Text(_myCartModal![index].id.toString())]),
+                    child: Column(children: [
+                      Text(_myCartModal![index].id.toString()),
+                      // Text(
+                      //     _myCartModal![index].)
+                    ]),
                   );
                 },
               ));

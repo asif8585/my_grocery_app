@@ -29,28 +29,45 @@ class Api_Service {
   }
 }
 
-void fetch_catagory_Data() async {
-  var dio = Dio();
-  var response =
-      await dio.get(Api_Constants.baseUrl + Api_Constants.catagories);
-  print(response.data.toString());
+class Cart_Api_Service {
+  Future<List<CartModal>?> fetch_Cart_Data() async {
+    try {
+      var url2 = Uri.parse(Api_Constants.baseUrl + Api_Constants.cart);
+
+      var response = await http.get(url2);
+      if (response.statusCode == 200) {
+        List<CartModal> _cartModel = cartModalFromJson(response.body);
+        return _cartModel;
+        // print(_model);
+      }
+    } catch (e) {
+      log(e.toString());
+    }
+  }
 }
+
+// class fetch_cart {
+//   Future<List<CartModal>?> fetch_Cart_data() async {
+//     var dio = Dio();
+//     var response = await dio.get(Api_Constants.baseUrl + Api_Constants.cart);
+//     if (response.statusCode == 200) {
+//       List<CartModal> _cart_modal = cartModalFromJson(response.data);
+
+//       // print(response.data.toString());
+//       return _cart_modal;
+//     }
+//   }
+// }
+
+// void fetch_catagory_Data() async {
+//   var dio = Dio();
+//   var response =
+//       await dio.get(Api_Constants.baseUrl + Api_Constants.catagories);
+//   print(response.data.toString());
+// }
 
 // void fetch_cart_data() async {
 //   var dio = Dio();
 //   var response = await dio.get(Api_Constants.baseUrl + Api_Constants.cart);
 //   print(response.data.toString());
 // }
-
-class fetch_cart {
-  Future<List<CartModal>?> fetch_Cart_data() async {
-    var dio = Dio();
-    var response = await dio.get(Api_Constants.baseUrl + Api_Constants.cart);
-    if (response.statusCode == 200) {
-      List<CartModal> _cart_modal = cartModalFromJson(response.data);
-
-      // print(response.data.toString());
-      return _cart_modal;
-    }
-  }
-}
